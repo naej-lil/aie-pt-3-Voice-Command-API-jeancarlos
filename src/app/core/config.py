@@ -6,7 +6,7 @@ from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    groq_api_key: str
+    groq_api_key: str = ""
     groq_model: str = "llama-3.1-8b-instant"
     groq_transcription_model: str = "whisper-large-v3-turbo"
     request_timeout_seconds: float = 45.0
